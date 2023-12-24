@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  transform: translate(0, -707px);
+  width: 100%;
+  height: 15vh;
+  background-color: #545454;
+  display: flex;
+}
+.navbar .logo {
+  width: 15%;
+  background-color: transparent;
+  transform: translate(0, -10px);
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -65px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 55%;
+  transform: translate(-15px, -20px);
+  padding-top: 3vh;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar nav .button-location {
+  width: 17.5%;
+  background-color: transparent;
+  transform: translate(630px, -30px);
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .local {
+  width: 15%;
+  height: 10vh;
+  background-color: transparent;
+  transform: translate(-70px, -13px);
+}
+.navbar .local img {
+  width: 25%;
+  transform: translate(0, 10px);
+}
+.navbar .local h3 {
+  transform: translate(60px, -30px);
+  color: white;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+form .c7 label[for=status_orcamento], form .c6 label[for=status_venda], form .c5 label[for=descricao], form .c4 label[for=forma_pagamento], form .c3 label[for=valor], form .c2 label[for=pedido], form .c1 label[for=nome_fantasia] {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+form .c7 select[name=status_orcamento]:hover, form .c6 select[name=status_venda]:hover, form .c5 input[name=descricao]:hover, form .c4 select[name=forma_pagamento]:hover, form .c3 input[name=valor]:hover, form .c2 input[name=pedido]:hover, form .c1 select[name=id_cliente]:hover {
+  transition: 0.4s;
+  background-color: rgb(237, 235, 233);
+}
+form .c1 {
+  width: 40%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 170px);
+  margin-left: 5%;
+}
+form .c1 select[name=id_cliente] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c2 {
+  width: 44%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(700px, 105px);
+  margin-left: 5%;
+}
+form .c2 input[name=pedido] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c3 {
+  width: 40%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 180px);
+  margin-left: 5%;
+}
+form .c3 input[name=valor] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c4 {
+  width: 44%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(700px, 115px);
+  margin-left: 5%;
+}
+form .c4 select[name=forma_pagamento] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c5 {
+  width: 40%;
+  height: 25vh;
+  background-color: transparent;
+  margin: -1.5% 5%;
+  transform: translate(0, 200px);
+}
+form .c5 input[name=descricao] {
+  width: 100%;
+  height: 21vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c6 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(780px, 100px);
+}
+form .c6 select[name=status_venda] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .c7 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(1150px, 35px);
+}
+form .c7 select[name=status_orcamento] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form input[type=submit] {
+  width: 10%;
+  height: 5vh;
+  margin-left: 85%;
+  transform: translate(0, 140px);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+}
+form input[type=submit]:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  color: white;
+  border-color: gray;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(500px, 150px);
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    transform: translate(0, -757.5px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-15px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -3.5px);
+  }
+  form .c2 {
+    transform: translate(650px, 105px);
+  }
+  form .c3 {
+    transform: translate(0, 150px);
+  }
+  form .c4 {
+    transform: translate(650px, 80px);
+  }
+  form .c5 {
+    transform: translate(0, 170px);
+  }
+  form .c6 {
+    transform: translate(730px, 60px);
+  }
+  form .c7 {
+    width: 20%;
+    transform: translate(1060px, -10px);
+  }
+  form .i-sub {
+    background-color: transparent;
+    transform: translate(1185px, -360px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .navbar {
+    transform: translate(0, -643px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-30px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -5px);
+  }
+  form .c1 {
+    width: 40%;
+    transform: translate(0, 160px);
+  }
+  form .c2 {
+    transform: translate(625px, 105px);
+  }
+  form .c4 {
+    transform: translate(625px, 90px);
+  }
+  form .c6 {
+    transform: translate(700px, 80px);
+  }
+  form .c7 {
+    width: 20%;
+    transform: translate(1015px, 20px);
+  }
+  form input[type=submit] {
+    transform: translate(0, 140px);
+  }
+}/*# sourceMappingURL=cadastro_orcamento.css.map */

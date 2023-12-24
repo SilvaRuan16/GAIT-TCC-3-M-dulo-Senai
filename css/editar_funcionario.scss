@@ -1,0 +1,581 @@
+@import 'variaveis.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.navbar {
+    transform: translate(0, -707px);
+    width: 100%;
+    height: 15vh;
+    background-color: #545454;
+    display: flex;
+
+    .logo {
+        width: 15%;
+        background-color: transparent;
+        transform: translate(0, -10px);
+
+        .imagem-logo {
+            width: 100%;
+            transform: translate(0, -65px);
+        }
+
+        button {
+            height: 10vh;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+
+    nav {
+        width: 55%;
+        transform: translate(-15px, -20px);
+        padding-top: 3vh;
+        height: 10vh;
+        background-color: $colorteste;
+
+        a.link {
+            font-size: 20px;
+            padding-left: 40px;
+            transform: translate(0, 20px);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            transition: .3s;
+        }
+
+        .seletor {
+            width: 16%;
+            height: 4vh;
+            border-radius: 7px;
+            border-style: solid;
+            transform: translate(40px);
+        }
+
+        .seletor:hover {
+            background-color: #545454;
+            color: white;
+            border-color: white;
+        }
+
+        .button-location{
+            width: 17.5%;
+            background-color: transparent;
+            transform: translate(630px, -30px);
+        }
+    }
+
+    .conteudo {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8a39d;
+    }
+
+    .local{
+        width: 15%;
+        height: 10vh;
+        background-color: $colorteste;
+        transform: translate(-70px, -5px);
+
+        img{
+            width: 25%;
+            transform: translate(0, 10px);
+        }
+
+        h3{
+            transform: translate(60px, -30px);
+            color: white;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8a39d;
+
+    %label{
+        font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+    }
+    %input:hover{
+        transition: .4s;
+        background-color: rgb(237, 235, 233);
+    }
+
+    .column-1{
+        width: 30%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 170px);
+        margin-left: 5%;
+
+        label[for="nome"]{
+            @extend %label;
+        }
+
+        input[name="nome"] {
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="nome"]:hover{
+            @extend %input;
+        }
+    }
+    .column-2{
+        width: 24%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 105px);
+        margin-left: 38%;
+
+        label[for="data_nascimento"]{
+            @extend %label;
+        }
+        input[name="data_nascimento"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-3{
+        width: 30%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 40px);
+        margin-left: 65%;
+
+        label[for="cpf"]{
+            @extend %label;
+        }
+        input[name="cpf"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-4{
+        width: 30%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 110px);
+        margin-left: 5%;
+
+        label[for="telefone"]{
+            @extend %label;
+        }
+
+        input[id="telefone"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="telefone"]:hover{
+            @extend %input;
+        }
+    }
+    .column-5{
+        width: 24%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 45px);
+        margin-left: 38%;
+
+        label[for="email"]{
+            @extend %label;
+        }
+        input[id="email"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="email"]:hover{
+            @extend %input;
+        }
+    }
+    .column-6{
+        width: 13%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -20px);
+        margin-left: 65%;
+
+        label[for="cep"]{
+            @extend %label;
+        }
+
+        input[id="cep"]{
+            width: 95%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="cep"]:hover{
+            @extend %input;
+        }
+    }
+    .column-7{
+        width: 14%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -85px);
+        margin-left: 81%;
+
+        label[for="rg"]{
+            @extend %label;
+        }
+
+        input[id="rg"]{
+            width: 95%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-8{
+        width: 30%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -14px);
+        margin-left: 5%;
+
+        label[for="endereco"]{
+            @extend %label;
+        }
+
+        input[id="endereco"]{
+            width: 97.5%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="endereco"]:hover{
+            @extend %input;
+        }
+    }
+    .column-9{
+        width: 24%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -80px);
+        margin-left: 38%;
+
+        label[for="cidade"]{
+            @extend %label;
+        }
+
+        input[id="cidade"]{
+            width: 97.5%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="cidade"]:hover{
+            @extend %input;
+        }
+    }
+    .column-10{
+        width: 13%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -145px);
+        margin-left: 65%;
+
+        label[for="n_endereco"]{
+            @extend %label;
+        }
+
+        input[id="n_endereco"]{
+            width: 94%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[id="n_endereco"]:hover{
+            @extend %input;
+        }
+    }
+    .column-11{
+        width: 14%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -210px);
+        margin-left: 81%;
+
+        label[for="bairro"]{
+            @extend %label;
+        }
+        input[id="bairro"]{
+            width: 95%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[id="bairro"]:hover{
+            @extend %input;
+        }
+    }
+    .column-12{
+        width: 20%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -145px);
+        margin-left: 5%;
+
+        label[for="status_funcionario"]{
+            @extend %label;
+        }
+        select[id="status_funcionario"]{
+            width: 100%;
+            height: 5vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        select[id="status_funcionario"]:hover{
+            @extend %input;
+        }
+    }
+    .column-13{
+        width: 34%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -210px);
+        margin-left: 28%;
+
+        label[for="usuario"]{
+            @extend %label;
+        }
+
+        input[id="usuario"]{
+            width: 98%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[id="usuario"]:hover{
+            @extend %input;
+        }
+    }
+    .column-14{
+        width: 30%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -275px);
+        margin-left: 65%;
+
+        label[for="senha"]{
+            @extend %label;
+        }
+        input[id="senha"]{
+            width: 98%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[id="senha"]:hover{
+            @extend %input;
+        }
+    }
+
+    input[type="submit"]{
+        width: 10%;
+        height: 5vh;
+        margin-left: 85%;
+        transform: translate(0, 140px);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: gray;
+
+        font-size: 20px;
+    }
+    input[type="submit"]:hover{
+        transition: .1s;
+        background-color: #545454;
+        color: white;
+        border-color: gray;
+    }
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(500px, 150px);
+}
+
+@media screen and (max-width: 1440px){
+    .navbar{
+        transform: translate(0, -757.5px);
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-15px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, 3.5px);
+        }
+    }
+    form{
+        .column-2{
+            transform: translate(0, 100px);
+        }
+        .column-3{
+            transform: translate(0, 30px);
+        }
+        .column-4{
+            transform: translate(0, 80px);
+        }
+        .column-5{
+            transform: translate(0, 10px);
+        }
+        .column-6{
+            transform: translate(0, -60px);
+        }
+        .column-7{
+            transform: translate(0, -130px);
+        }
+        .column-8{
+            transform: translate(0, -58px);
+        }
+        .column-9{
+            transform: translate(0, -125px);
+        }
+        .column-10{
+            transform: translate(0, -195px);
+        }
+        .column-11{
+            transform: translate(0, -265px); 
+        }
+        .column-12{
+            transform: translate(0, -200px);
+        }
+        .column-13{
+            transform: translate(0, -270px);
+        }
+        .column-14{
+            transform: translate(0, -340px);
+        }
+    }
+}
+
+@media screen and (max-width: 1370px){
+    .navbar {
+        transform: translate(0, -643px);
+    
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-30px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, 2px);
+        }
+    }
+
+    form {
+        .column-1{
+            transform: translate(0, 150px);
+        }
+        .column-2{
+            transform: translate(0, 90px);
+        }
+        .column-3{
+            transform: translate(0, 30px);
+        }
+        .column-4{
+            transform: translate(0, 80px);
+        }
+        .column-5{
+            transform: translate(0, 20px);
+        }
+        .column-6{
+            transform: translate(0, -40px);
+        }
+        .column-7{
+            transform: translate(0, -100px);
+        }
+        .column-8{
+            transform: translate(0, -48px);
+        }
+        .column-9{
+            transform: translate(0, -105px);
+        }
+        .column-10{
+            transform: translate(0, -165px);
+        }
+        .column-11{
+            transform: translate(0, -225px);
+        }
+        .column-12{
+            transform: translate(0, -180px);
+        }
+        .column-13{
+            transform: translate(0, -240px);
+        }
+        .column-14{
+            transform: translate(0, -300px);
+        }
+    
+        input[type="submit"]{
+            transform: translate(0, 140px);
+        }
+    }
+}

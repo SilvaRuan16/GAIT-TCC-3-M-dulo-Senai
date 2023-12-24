@@ -1,0 +1,423 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  transform: translate(0, -707px);
+  width: 100%;
+  height: 15vh;
+  background-color: #545454;
+  display: flex;
+}
+.navbar .logo {
+  width: 15%;
+  background-color: transparent;
+  transform: translate(0, -10px);
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -65px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 55%;
+  transform: translate(-15px, -20px);
+  padding-top: 3vh;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar nav .button-location {
+  width: 17.5%;
+  background-color: transparent;
+  transform: translate(630px, -30px);
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .local {
+  width: 15%;
+  height: 10vh;
+  background-color: transparent;
+  transform: translate(-70px, -10px);
+}
+.navbar .local img {
+  width: 25%;
+  transform: translate(0, 10px);
+}
+.navbar .local h3 {
+  transform: translate(60px, -30px);
+  color: white;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+form .column-12 label[for=status_fornecedor], form .column-11 label[for=bairro], form .column-10 label[for=uf], form .column-9 label[for=n_endereco], form .column-8 label[for=cidade], form .column-7 label[for=endereco], form .column-6 label[for=cep], form .column-5 label[for=email], form .column-4 label[for=telefone], form .column-3 label[for=cnpj], form .column-2 label[for=razao_social], form .column-1 label[for=nome_fantasia] {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+form .column-1 {
+  width: 30%;
+  height: 9vh;
+  transform: translate(0, 170px);
+  margin-left: 5%;
+  background-color: transparent;
+}
+form .column-1 input[id=nome_fantasia] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-2 {
+  width: 28%;
+  height: 9vh;
+  transform: translate(0, 105px);
+  margin-left: 38.5%;
+  background-color: transparent;
+}
+form .column-2 input[id=razao_social] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3 {
+  width: 25%;
+  height: 9vh;
+  transform: translate(0, 40px);
+  margin-left: 70%;
+  background-color: transparent;
+}
+form .column-3 input[id=cnpj] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-4 {
+  width: 30%;
+  height: 9vh;
+  transform: translate(0, 110px);
+  margin-left: 5%;
+  background-color: transparent;
+}
+form .column-4 input[id=telefone] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-5 {
+  width: 28%;
+  height: 9vh;
+  transform: translate(0, 45px);
+  margin-left: 38.5%;
+  background-color: transparent;
+}
+form .column-5 input[id=email] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-6 {
+  width: 25%;
+  height: 9vh;
+  transform: translate(0, -20px);
+  margin-left: 70%;
+  background-color: transparent;
+}
+form .column-6 input[id=cep] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-7 {
+  width: 30%;
+  height: 9vh;
+  transform: translate(0, 50px);
+  margin-left: 5%;
+  background-color: transparent;
+}
+form .column-7 input[id=endereco] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-8 {
+  width: 28%;
+  height: 9vh;
+  transform: translate(0, -15px);
+  margin-left: 38.5%;
+  background-color: transparent;
+}
+form .column-8 input[id=cidade] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-9 {
+  width: 11%;
+  height: 9vh;
+  transform: translate(0, -80px);
+  margin-left: 70%;
+  background-color: transparent;
+}
+form .column-9 input[id=n_endereco] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-10 {
+  width: 11%;
+  height: 9vh;
+  transform: translate(0, -145px);
+  margin-left: 84%;
+  background-color: transparent;
+}
+form .column-10 select[id=uf] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-11 {
+  width: 30%;
+  height: 9vh;
+  transform: translate(0, -80px);
+  margin-left: 5%;
+  background-color: transparent;
+}
+form .column-11 input[id=bairro] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-12 {
+  width: 20%;
+  height: 9vh;
+  transform: translate(0, -140px);
+  margin-left: 38.5%;
+  background-color: transparent;
+}
+form .column-12 select[id=status_fornecedor] {
+  width: 100%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form input[type=submit] {
+  width: 10%;
+  height: 5vh;
+  margin-left: 85%;
+  transform: translate(0, 140px);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+}
+form input[type=submit]:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  color: white;
+  border-color: gray;
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    transform: translate(0, -757.5px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-15px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -1px);
+  }
+  form {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8a39d;
+  }
+  form .column-1 label[for=nome_fantasia], form .column-2 label[for=razao_social], form .column-3 label[for=cnpj], form .column-4 label[for=telefone], form .column-5 label[for=email], form .column-6 label[for=cep], form .column-7 label[for=endereco], form .column-8 label[for=cidade], form .column-9 label[for=n_endereco], form .column-10 label[for=uf], form .column-11 label[for=bairro], form .column-12 label[for=status_fornecedor] {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  }
+  form .column-2 {
+    transform: translate(0, 100px);
+  }
+  form .column-3 {
+    transform: translate(0, 30px);
+  }
+  form .column-4 {
+    transform: translate(0, 80px);
+  }
+  form .column-5 {
+    transform: translate(0, 10px);
+  }
+  form .column-6 {
+    transform: translate(0, -60px);
+  }
+  form .column-7 {
+    transform: translate(0, 10px);
+  }
+  form .column-8 {
+    transform: translate(0, -60px);
+  }
+  form .column-9 {
+    transform: translate(0, -130px);
+  }
+  form .column-10 {
+    transform: translate(0, -200px);
+  }
+  form .column-11 {
+    transform: translate(0, -130px);
+  }
+  form .column-12 {
+    transform: translate(0, -200px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .navbar {
+    transform: translate(0, -643px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-30px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -2px);
+  }
+  form {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8a39d;
+  }
+  form .column-1 label[for=nome_fantasia], form .column-2 label[for=razao_social], form .column-3 label[for=cnpj], form .column-4 label[for=telefone], form .column-5 label[for=email], form .column-6 label[for=cep], form .column-7 label[for=endereco], form .column-8 label[for=cidade], form .column-9 label[for=n_endereco], form .column-10 label[for=uf], form .column-11 label[for=bairro], form .column-12 label[for=status_fornecedor] {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  }
+  form .column-1 {
+    transform: translate(0, 150px);
+  }
+  form .column-2 {
+    transform: translate(0, 90px);
+  }
+  form .column-3 {
+    transform: translate(0, 30px);
+  }
+  form .column-4 {
+    transform: translate(0, 80px);
+  }
+  form .column-5 {
+    transform: translate(0, 20px);
+  }
+  form .column-6 {
+    transform: translate(0, -40px);
+  }
+  form .column-7 {
+    transform: translate(0, 10px);
+  }
+  form .column-8 {
+    transform: translate(0, -50px);
+  }
+  form .column-9 {
+    width: 12%;
+    transform: translate(0, -110px);
+  }
+  form .column-10 {
+    transform: translate(0, -170px);
+  }
+  form .column-11 {
+    transform: translate(0, -120px);
+  }
+  form .column-12 {
+    transform: translate(0, -180px);
+  }
+}/*# sourceMappingURL=edit_fornecedor.css.map */

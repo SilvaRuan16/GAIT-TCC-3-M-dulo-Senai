@@ -1,0 +1,519 @@
+@import 'variaveis.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.navbar {
+    transform: translate(0, -707px);
+    width: 100%;
+    height: 15vh;
+    background-color: #545454;
+    display: flex;
+
+    .logo {
+        width: 15%;
+        background-color: transparent;
+        transform: translate(0, -10px);
+
+        .imagem-logo {
+            width: 100%;
+            transform: translate(0, -65px);
+        }
+
+        button {
+            height: 10vh;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+
+    nav {
+        width: 55%;
+        transform: translate(-15px, -20px);
+        padding-top: 3vh;
+        height: 10vh;
+        background-color: $colorteste;
+
+        a.link {
+            font-size: 20px;
+            padding-left: 40px;
+            transform: translate(0, 20px);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            transition: .3s;
+        }
+
+        .seletor {
+            width: 16%;
+            height: 4vh;
+            border-radius: 7px;
+            border-style: solid;
+            transform: translate(40px);
+        }
+
+        .seletor:hover {
+            background-color: #545454;
+            color: white;
+            border-color: white;
+        }
+
+        .button-location{
+            width: 17.5%;
+            background-color: transparent;
+            transform: translate(630px, -30px);
+        }
+    }
+
+    .conteudo {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8a39d;
+    }
+
+    .local{
+        width: 15%;
+        height: 10vh;
+        background-color: $colorteste;
+        transform: translate(-70px, -10px);
+
+        img{
+            width: 25%;
+            transform: translate(0, 10px);
+        }
+
+        h3{
+            transform: translate(60px, -30px);
+            color: white;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8a39d;
+
+    %label{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+    }
+    %input:hover{
+        transition: .4s;
+        background-color: rgb(237, 235, 233);
+    }
+
+    .column-1{
+        width: 30%;
+        height: 9vh;
+        transform: translate(0, 170px);
+        margin-left: 5%;
+        background-color: $colorfuncionarios;
+
+        label[for="nome_fantasia"]{
+            @extend %label;
+        }
+
+        input[id="nome_fantasia"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-2{
+        width: 28%;
+        height: 9vh;
+        transform: translate(0, 105px);
+        margin-left: 38.5%;
+        background-color: $colorfuncionarios;
+
+        label[for="razao_social"]{
+            @extend %label;
+        }
+
+        input[id="razao_social"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-3{
+        width: 25%;
+        height: 9vh;
+        transform: translate(0, 40px);
+        margin-left: 70%;
+        background-color: $colorfuncionarios;
+
+        label[for="cnpj"]{
+            @extend %label;
+        }
+
+        input[id="cnpj"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-4{
+        width: 30%;
+        height: 9vh;
+        transform: translate(0, 110px);
+        margin-left: 5%;
+        background-color: $colorfuncionarios;
+
+        label[for="telefone"]{
+            @extend %label;
+        }
+
+        input[id="telefone"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-5{
+        width: 28%;
+        height: 9vh;
+        transform: translate(0, 45px);
+        margin-left: 38.5%;
+        background-color: $colorfuncionarios;
+
+        label[for="email"]{
+            @extend %label;
+        }
+
+        input[id="email"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-6{
+        width: 25%;
+        height: 9vh;
+        transform: translate(0, -20px);
+        margin-left: 70%;
+        background-color: $colorfuncionarios;
+
+        label[for="cep"]{
+            @extend %label;
+        }
+
+        input[id="cep"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-7{
+        width: 30%;
+        height: 9vh;
+        transform: translate(0, 50px);
+        margin-left: 5%;
+        background-color: $colorfuncionarios;
+
+        label[for="endereco"]{
+            @extend %label;
+        }
+
+        input[id="endereco"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-8{
+        width: 28%;
+        height: 9vh;
+        transform: translate(0, -15px);
+        margin-left: 38.5%;
+        background-color: $colorfuncionarios;
+
+        label[for="cidade"]{
+            @extend %label;
+        }
+
+        input[id="cidade"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-9{
+        width: 11%;
+        height: 9vh;
+        transform: translate(0, -80px);
+        margin-left: 70%;
+        background-color: $colorfuncionarios;
+
+        label[for="n_endereco"]{
+            @extend %label;
+        }
+
+        input[id="n_endereco"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-10{
+        width: 11%;
+        height: 9vh;
+        transform: translate(0, -145px);
+        margin-left: 84%;
+        background-color: $colorfuncionarios;
+
+        label[for="uf"]{
+            @extend %label;
+        }
+
+        select[id="uf"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-11{
+        width: 30%;
+        height: 9vh;
+        transform: translate(0, -80px);
+        margin-left: 5%;
+        background-color: $colorfuncionarios;
+
+        label[for="bairro"]{
+            @extend %label;
+        }
+
+        input[id="bairro"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-12{
+        width: 20%;
+        height: 9vh;
+        transform: translate(0, -140px);
+        margin-left: 38.5%;
+        background-color: $colorfuncionarios;
+
+        label[for="status_fornecedor"]{
+            @extend %label;
+        }
+
+        select[id="status_fornecedor"]{
+            width: 100%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    input[type="submit"]{
+        width: 10%;
+        height: 5vh;
+        margin-left: 85%;
+        transform: translate(0, 140px);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: gray;
+
+        font-size: 20px;
+    }
+    input[type="submit"]:hover{
+        transition: .1s;
+        background-color: #545454;
+        color: white;
+        border-color: gray;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .navbar{
+        transform: translate(0, -757.5px);
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-15px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, -1px);
+        }
+    }
+
+    form {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8a39d;
+    
+        %label{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+        %input:hover{
+            transition: .4s;
+            background-color: rgb(237, 235, 233);
+        }
+        .column-2{
+            transform: translate(0, 100px);
+        }
+        .column-3{
+            transform: translate(0, 30px);
+        }
+        .column-4{
+            transform: translate(0, 80px);
+        }
+        .column-5{
+            transform: translate(0, 10px);
+        }
+        .column-6{
+            transform: translate(0, -60px);
+        }
+        .column-7{
+            transform: translate(0, 10px);
+        }
+        .column-8{
+            transform: translate(0, -60px);
+        }
+        .column-9{
+            transform: translate(0, -130px);
+        }
+        .column-10{
+            transform: translate(0, -200px);
+        }
+        .column-11{
+            transform: translate(0, -130px);
+        }
+        .column-12{
+            transform: translate(0, -200px);
+        }
+    }
+}
+
+@media screen and (max-width: 1370px){
+    .navbar {
+        transform: translate(0, -643px);
+    
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-30px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, -2px);
+        }
+    }
+
+    form {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8a39d;
+    
+        %label{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+        %input:hover{
+            transition: .4s;
+            background-color: rgb(237, 235, 233);
+        }
+        .column-1{
+            transform: translate(0, 150px);
+        }
+        .column-2{
+            transform: translate(0, 90px);
+        }
+        .column-3{
+            transform: translate(0, 30px);
+        }
+        .column-4{
+            transform: translate(0, 80px);
+        }
+        .column-5{
+            transform: translate(0, 20px);
+        }
+        .column-6{
+            transform: translate(0, -40px);
+        }
+        .column-7{
+            transform: translate(0, 10px);
+        }
+        .column-8{
+            transform: translate(0, -50px);
+        }
+        .column-9{
+            width: 12%;
+            transform: translate(0, -110px);
+        }
+        .column-10{
+            transform: translate(0, -170px);
+        }
+        .column-11{
+            transform: translate(0, -120px);
+        }
+        .column-12{
+            transform: translate(0, -180px);
+        }
+    }
+}

@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  background-color: #545454;
+  display: flex;
+}
+.navbar .logo {
+  width: 15%;
+  background-color: transparent;
+  transform: translate(0, -10px);
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -65px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 55%;
+  transform: translate(-15px, -20px);
+  padding-top: 3vh;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar nav .button-location {
+  width: 17.5%;
+  background-color: transparent;
+  transform: translate(630px, -30px);
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .local {
+  width: 15%;
+  height: 10vh;
+  background-color: transparent;
+  transform: translate(-70px, -10px);
+}
+.navbar .local img {
+  width: 25%;
+  transform: translate(0, 10px);
+}
+.navbar .local h3 {
+  transform: translate(60px, -30px);
+  color: white;
+}
+
+.main-conteudo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #a8a39d;
+  display: inline-flex;
+}
+.main-conteudo .pesquisa {
+  width: 40%;
+  height: 7vh;
+  background-color: transparent;
+  transform: translate(100px, 150px);
+}
+.main-conteudo .pesquisa input[type=text] {
+  width: 77%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+  padding-left: 20px;
+  transform: translate(0, 8px);
+}
+.main-conteudo .pesquisa input[type=text]:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+}
+.main-conteudo .pesquisa .bt-pesquisa {
+  width: 18%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+  transform: translate(0, 7px);
+}
+.main-conteudo .pesquisa .bt-pesquisa .lupa-pesquisa {
+  width: 25%;
+  padding-top: 3px;
+  transform: translate(0, -3px);
+}
+.main-conteudo .pesquisa .bt-pesquisa:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px whitesmoke;
+}
+.main-conteudo .pesquisa .bt-pesquisa:hover .lupa-pesquisa {
+  width: 25%;
+  padding-top: 3px;
+  color: white;
+}
+.main-conteudo .new-button {
+  width: 10%;
+  height: 5vh;
+  background-color: transparent;
+  transform: translate(670px, 160px);
+}
+.main-conteudo .new-button .botao-novo {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+}
+.main-conteudo .new-button .botao-novo a {
+  text-decoration: none;
+  color: black;
+}
+.main-conteudo .new-button .botao-novo:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  border-color: gray;
+}
+.main-conteudo .new-button .botao-novo:hover a {
+  color: white;
+}
+.main-conteudo .div-tabela {
+  width: 87%;
+  height: 60vh;
+  background-color: whitesmoke;
+  margin: 16% -43.5%;
+  max-height: 55vh;
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+.main-conteudo .div-tabela table {
+  border-collapse: collapse;
+  width: 180%;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-conteudo .div-tabela th,
+.main-conteudo .div-tabela td {
+  text-align: center;
+  padding: 10px;
+}
+.main-conteudo .div-tabela th {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+}
+.main-conteudo .div-tabela td {
+  background-color: whitesmoke;
+}
+.main-conteudo .div-tabela td a {
+  text-decoration: none;
+}
+.main-conteudo .div-tabela td a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(500px, 150px);
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-15px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -1px);
+  }
+  .main-conteudo .pesquisa {
+    background-color: transparent;
+    transform: translate(100px, 150px);
+  }
+  .main-conteudo .new-button {
+    transform: translate(625px, 160px);
+  }
+  .main-conteudo .div-tabela {
+    margin: 18% -43.5%;
+    max-height: 50vh;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-30px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -2px);
+  }
+  .new-button .botao-novo {
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: gray;
+    font-size: 20px;
+    transform: translate(-80px, 0);
+  }
+  .main-conteudo .pesquisa {
+    width: 43%;
+    height: 7vh;
+    background-color: transparent;
+    transform: translate(80px, 150px);
+  }
+  .main-conteudo .pesquisa input[type=text] {
+    transform: translate(0, 6px);
+  }
+  .main-conteudo .pesquisa .bt-pesquisa .lupa-pesquisa {
+    width: 25%;
+    padding-top: 3px;
+    transform: translate(0, -5px);
+  }
+  .main-conteudo .div-tabela {
+    transform: translate(-50px, 0);
+  }
+}/*# sourceMappingURL=fornecedores.css.map */

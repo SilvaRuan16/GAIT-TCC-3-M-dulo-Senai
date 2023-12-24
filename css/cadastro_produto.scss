@@ -1,0 +1,382 @@
+@import 'variaveis.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.navbar {
+    transform: translate(0, -707px);
+    width: 100%;
+    height: 15vh;
+    background-color: #545454;
+    display: flex;
+
+    .logo {
+        width: 15%;
+        background-color: transparent;
+        transform: translate(0, -10px);
+
+        .imagem-logo {
+            width: 100%;
+            transform: translate(0, -65px);
+        }
+
+        button {
+            height: 10vh;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    nav {
+        width: 55%;
+        transform: translate(-15px, -20px);
+        padding-top: 3vh;
+        height: 10vh;
+        background-color: $colorteste;
+
+        a.link {
+            font-size: 20px;
+            padding-left: 40px;
+            transform: translate(0, 20px);
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            transition: .3s;
+        }
+
+        .seletor {
+            width: 16%;
+            height: 4vh;
+            border-radius: 7px;
+            border-style: solid;
+            transform: translate(40px);
+        }
+
+        .seletor:hover {
+            background-color: #545454;
+            color: white;
+            border-color: white;
+        }
+
+        .button-location{
+            width: 17.5%;
+            background-color: transparent;
+            transform: translate(630px, -30px);
+        }
+    }
+    .conteudo {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8a39d;
+    }
+
+    .local{
+        width: 15%;
+        height: 10vh;
+        background-color: $colorteste;
+        transform: translate(-70px, -13px);
+
+        img{
+            width: 25%;
+            transform: translate(0, 10px);
+        }
+
+        h3{
+            transform: translate(60px, -30px);
+            color: white;
+        }
+    }
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8a39d;
+
+    %label{
+        font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+    }
+    %input:hover{
+        transition: .4s;
+        background-color: rgb(237, 235, 233);
+    }
+    .column-2{
+        width: 47%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 150px);
+        margin-left: 5%;
+    
+        label[for="nome_produto"]{
+            @extend %label;
+        }
+        input[name="nome_produto"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+    }
+    .column-3{
+        width: 40%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 85px);
+        margin-left: 56%;
+
+        label[for="valor"]{
+            @extend %label;
+        }
+        input[name="valor"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="valor"]:hover{
+            @extend %input;
+        }
+    }
+
+    .column-4{
+        width: 24%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 140px);
+        margin-left: 5%;
+
+        label[for="quantidade"]{
+            @extend %label;
+        }
+
+        input[id="quantidade"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="quantidade"]:hover{
+            @extend %input;
+        }
+    }
+    .column-5{
+        width: 33%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 75px);
+        margin-left: 33%;
+
+        label[for="categoria"]{
+            @extend %label;
+        }
+        select[id="categoria"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        select[name="categoria"]:hover{
+            @extend %input;
+        }
+    }
+    .column-6{
+        width: 26%;
+        height: 9vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 10px);
+        margin-left: 70%;
+
+        label[for="status_produto"]{
+            @extend %label;
+        }
+        select[id="status_produto"]{
+            width: 97%;
+            height: 4vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        select[id="status"]:hover{
+            @extend %input;
+        }
+    }
+    .column-7{
+        width: 43%;
+        height: 25vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, 80px);
+        margin-left: 5%;
+
+        label[for="descricao"]{
+            @extend %label;
+        }
+
+        input[id="descricao"]{
+            width: 100%;
+            height: 25vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="observacao"]:hover{
+            @extend %input;
+        }
+    }
+    .column-8{
+        width: 43%;
+        height: 25vh;
+        background-color: $colorfuncionarios;
+        transform: translate(0, -95px);
+        margin-left: 53%;
+
+        label[for="observacao"]{
+            @extend %label;
+        }
+
+        input[id="observacao"]{
+            width: 97.5%;
+            height: 25vh;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: gray;
+            padding-left:$paddinginput;
+        }
+        input[name="observacao"]:hover{
+            @extend %input;
+        }
+    }
+
+    input[type="submit"]{
+        width: 10%;
+        height: 5vh;
+        margin-left: 85%;
+        transform: translate(0, 140px);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: gray;
+
+        font-size: 20px;
+    }
+    input[type="submit"]:hover{
+        transition: .1s;
+        background-color: #545454;
+        color: white;
+        border-color: gray;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .navbar{
+        transform: translate(0, -757.5px);
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-15px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, -1px);
+        }
+    }
+
+    form{
+        .column-2{
+            transform: translate(0, 150px);
+        }
+        .column-3{
+            transform: translate(0, 80px);
+        }
+        .column-4{
+            transform: translate(0, 130px);
+        }
+        .column-5{
+            transform: translate(0, 60px);
+        }
+        .column-6{
+            transform: translate(0, -10px);
+        }
+        .column-7{
+            transform: translate(0, 40px);
+        }
+        .column-8{
+            transform: translate(0, -150px);
+        }
+    }
+}
+
+@media screen and (max-width: 1370px){
+    .navbar {
+        transform: translate(0, -643px);
+    
+        .logo{
+            background-color: transparent;
+            .imagem-logo {
+                transform: translate(0, -55px);
+            }
+        }
+        nav{
+            background-color: transparent;
+            transform: translate(-30px, -10px);
+        }
+        .local{
+            background-color: transparent;
+            transform: translate(-70px, -6px);
+        }
+    }
+
+    form {
+        .column-2{
+            transform: translate(0, 160px);
+        }
+        .column-3{
+            transform: translate(0, 100px);
+        }
+        .column-4{
+            transform: translate(0, 140px);
+        }
+        .column-5{
+            transform: translate(0, 80px);
+        }
+        .column-6{
+            transform: translate(0, 20px);
+        }
+        .column-7{
+            transform: translate(0, 70px);
+        }
+        .column-8{
+            transform: translate(0, -90px);
+        }
+    
+        input[type="submit"]{
+            transform: translate(0, 140px);
+        }
+    }
+}

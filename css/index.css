@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div .conteudo {
+  background-color: #545454;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+div .conteudo .imagem {
+  width: 30%;
+  height: 20vh;
+  background-color: transparent;
+  margin: 2% 34%;
+}
+div .conteudo .imagem .img-logo {
+  width: 80%;
+  transform: translate(50px, -100px);
+}
+div .conteudo .formulario form {
+  width: 35%;
+  height: 50vh;
+  background-color: #E2E2E2;
+  transform: translate(485px, 40px);
+  border-radius: 4vh;
+  border-style: solid;
+  border-color: gray;
+  box-shadow: 10px 10px 5px 5px gray;
+}
+div .conteudo .formulario form .u-usuario .icone-usuario {
+  width: 8%;
+  transform: translate(170px, 40px);
+}
+div .conteudo .formulario form .u-usuario label[for=usuario] {
+  font-size: 30px;
+  margin: 43%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div .conteudo .formulario form .u-usuario input[type=text] {
+  width: 75%;
+  height: 4vh;
+  margin: 3% 12%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 20px;
+}
+div .conteudo .formulario form .u-usuario input[type=text]:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+}
+div .conteudo .formulario form .u-senha .icone-senha {
+  width: 8%;
+  margin-left: 32%;
+  transform: translate(0, 7px);
+}
+div .conteudo .formulario form .u-senha label[for=senha] {
+  font-size: 30px;
+  margin-left: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div .conteudo .formulario form .u-senha input[type=password] {
+  width: 75%;
+  height: 4vh;
+  margin: 3% 12%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 20px;
+}
+div .conteudo .formulario form .u-senha input[type=password]:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+}
+div .conteudo .formulario form .div-submit input[type=submit] {
+  width: 25%;
+  height: 4vh;
+  margin: 2% 36%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  background-color: white;
+  font-size: 16px;
+}
+div .conteudo .formulario form .div-submit input[type=submit]:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  color: white;
+  border-color: gray;
+}
+
+@media screen and (max-width: 1440px) {
+  .formulario {
+    transform: translate(-30px, 0);
+  }
+}
+@media screen and (max-width: 1360px) {
+  .formulario {
+    transform: translate(-50px, 0);
+  }
+  .formulario .u-usuario .icone-usuario {
+    margin: 0 -15px;
+  }
+}/*# sourceMappingURL=index.css.map */

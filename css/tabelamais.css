@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+.conteudo{
+    width: 100%;
+    height: 110vh;
+    position: fixed;
+    background-color: #a8a39d;
+    transform: translate(0, -20px);
+}
+
+.armazem-div{
+    width: 65%;
+    height: 50vh;
+    background-color: transparent;
+    margin: 13% 18%;
+    display: inline-flex;
+}
+
+.armazem-div > .botao-fulltbl{
+    width: 32%;
+    height: 50vh;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.botao-fulltbl > div{
+    background-color: whitesmoke;
+    height: 49.7vh;
+    border-radius: 27px;
+    border-style: none;
+}
+
+.botao-fulltbl > div .encapsulamento{
+    width: 100%;
+    background-color: transparent;
+    transform: translate(0, 120px);
+}
+
+.botao-fulltbl > div a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black; 
+}
+.botao-fulltbl > div:hover{
+    transition: .5s;
+    background-color: gray;
+    box-shadow: 7px 5px 10px 3px white;
+}
+.botao-fulltbl > div a:hover{
+    text-decoration:underline;
+    color: white;
+}
+
+.botao-fulltbl > div img{
+    width: 40%;
+    transform: translate(0, 70px);
+}
+
+.botao-table-update{
+    width: 32%;
+    height: 50vh;
+    margin-left: 2%;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.botao-table-update > div{
+    background-color: transparent;
+    height: 49.7vh;
+    border-radius: 28px;
+    border-style: none;
+}
+
+.botao-table-update > div:hover{
+    transition: .5s;
+    background-color: gray;
+    box-shadow: 7px 5px 10px 3px white;
+}
+
+.botao-table-update > div .encapsulamento-update a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.botao-table-update > div .encapsulamento-update{
+    width: 100%;
+    background-color: transparent;
+    transform: translate(0, 120px);
+}
+
+.botao-table-update > div .encapsulamento-update a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-table-update > div img{
+    width: 40%;
+    transform: translate(0, 70px);
+}
+
+.botao-table-delete{
+    width: 32%;
+    margin-left: 2%;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.botao-table-delete div{
+    background-color: whitesmoke;
+    height: 49.7vh;
+    border-radius: 28px;
+    border-style: none;
+}
+
+.botao-table-delete div:hover{
+    transition: .5s;
+    background-color: gray;
+    box-shadow: 7px 5px 10px 3px white;
+}
+
+.botao-table-delete div .encapsulamento-delete a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.botao-table-delete > div .encapsulamento-delete{
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    transform: translate(0, 120px);
+}
+.botao-table-delete > div .encapsulamento-delete:hover{
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    transform: translate(0, 120px);
+    box-shadow: none;
+}
+
+.botao-table-delete > div .encapsulamento-delete a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-table-delete > div img{
+    width: 40%;
+    transform: translate(0, 70px);
+}

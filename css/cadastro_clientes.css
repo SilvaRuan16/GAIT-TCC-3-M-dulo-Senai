@@ -1,0 +1,457 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  transform: translate(0, -707px);
+  width: 100%;
+  height: 15vh;
+  background-color: #545454;
+  display: flex;
+}
+.navbar .logo {
+  width: 15%;
+  background-color: transparent;
+  transform: translate(0, -10px);
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -65px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 55%;
+  transform: translate(-15px, -20px);
+  padding-top: 3vh;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar nav .button-location {
+  width: 17.5%;
+  background-color: transparent;
+  transform: translate(630px, -30px);
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .local {
+  width: 15%;
+  height: 10vh;
+  background-color: transparent;
+  transform: translate(-70px, -10px);
+}
+.navbar .local img {
+  width: 25%;
+  transform: translate(0, 10px);
+}
+.navbar .local h3 {
+  transform: translate(60px, -30px);
+  color: white;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+form .column-13 label[for=tipo_pessoa], form .column-12 label[for=status_cliente], form .column-11 label[for=bairro], form .column-10 label[for=n_endereco], form .column-9 label[for=cidade], form .column-8 label[for=endereco], form .column-7 label[for=rg], form .column-6 label[for=cep], form .column-5 label[for=email], form .column-4 label[for=telefone], form .column-3-2 label[for=cnpj], form .column-3 label[for=cpf], form .column-2 label[for=data_nascimento], form .column-1 label[for=nome] {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+form .column-13 select[id=tipo_pessoa]:hover, form .column-12 select[id=status_cliente]:hover, form .column-11 input[id=bairro]:hover, form .column-10 input[id=n_endereco]:hover, form .column-9 input[name=cidade]:hover, form .column-8 input[name=endereco]:hover, form .column-6 input[name=cep]:hover, form .column-5 input[name=email]:hover, form .column-4 input[name=telefone]:hover, form .column-1 input[name=nome]:hover {
+  transition: 0.4s;
+  background-color: rgb(237, 235, 233);
+}
+form .column-1 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 190px);
+  margin-left: 5%;
+}
+form .column-1 input[name=nome] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-2 {
+  width: 26%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 125px);
+  margin-left: 38%;
+}
+form .column-2 input[name=data_nascimento] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3 {
+  width: 15%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 60px);
+  margin-left: 66.5%;
+}
+form .column-3 input[name=cpf] {
+  width: 93%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3-2 {
+  width: 13%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -5px);
+  margin-left: 83%;
+}
+form .column-3-2 input[name=cnpj] {
+  width: 93%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-4 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 45px);
+  margin-left: 5%;
+}
+form .column-4 input[id=telefone] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-5 {
+  width: 26%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -20px);
+  margin-left: 38%;
+}
+form .column-5 input[id=email] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-6 {
+  width: 14.5%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -85px);
+  margin-left: 66.5%;
+}
+form .column-6 input[id=cep] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-7 {
+  width: 13%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -150px);
+  margin-left: 83%;
+}
+form .column-7 input[id=rg] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-8 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -95px);
+  margin-left: 5%;
+}
+form .column-8 input[id=endereco] {
+  width: 97.5%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-9 {
+  width: 26%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -160px);
+  margin-left: 38%;
+}
+form .column-9 input[id=cidade] {
+  width: 97.5%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-10 {
+  width: 14.5%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -225px);
+  margin-left: 66.5%;
+}
+form .column-10 input[id=n_endereco] {
+  width: 94%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-11 {
+  width: 13%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -290px);
+  margin-left: 83%;
+}
+form .column-11 input[id=bairro] {
+  width: 95%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-12 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -240px);
+  margin-left: 5%;
+}
+form .column-12 select[id=status_cliente] {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-13 {
+  width: 20%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -305px);
+  margin-left: 28%;
+}
+form .column-13 select[id=tipo_pessoa] {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form input[type=submit] {
+  width: 10%;
+  height: 5vh;
+  margin-left: 85%;
+  transform: translate(0, 140px);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+}
+form input[type=submit]:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  color: white;
+  border-color: gray;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(500px, 150px);
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    transform: translate(0, -757.5px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-15px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -1px);
+  }
+  form .column-1 {
+    transform: translate(0, 190px);
+  }
+  form .column-2 {
+    transform: translate(0, 120px);
+  }
+  form .column-3 {
+    transform: translate(0, 50px);
+  }
+  form .column-3-2 {
+    transform: translate(0, -20px);
+  }
+  form .column-4 {
+    transform: translate(0, 30px);
+  }
+  form .column-5 {
+    transform: translate(0, -40px);
+  }
+  form .column-6 {
+    transform: translate(0, -110px);
+  }
+  form .column-7 {
+    transform: translate(0, -180px);
+  }
+  form .column-8 {
+    transform: translate(0, -130px);
+  }
+  form .column-9 {
+    transform: translate(0, -200px);
+  }
+  form .column-10 {
+    transform: translate(0, -265px);
+  }
+  form .column-11 {
+    transform: translate(0, -335px);
+  }
+  form .column-12 {
+    transform: translate(0, -290px);
+  }
+  form .column-13 {
+    transform: translate(0, -360px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .navbar {
+    transform: translate(0, -645.5px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-30px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, -2px);
+  }
+  form .column-1 {
+    transform: translate(0, 185px);
+  }
+  form .column-2 {
+    transform: translate(0, 125px);
+  }
+  form .column-3 {
+    transform: translate(0, 70px);
+  }
+  form .column-3-2 {
+    transform: translate(0, 10px);
+  }
+  form .column-4 {
+    transform: translate(0, 30px);
+  }
+  form .column-5 {
+    transform: translate(0, -30px);
+  }
+  form .column-6 {
+    transform: translate(0, -90px);
+  }
+  form .column-7 {
+    transform: translate(0, -150px);
+  }
+  form .column-8 {
+    transform: translate(0, -120px);
+  }
+  form .column-9 {
+    transform: translate(0, -180px);
+  }
+  form .column-10 {
+    transform: translate(0, -240px);
+  }
+  form .column-11 {
+    transform: translate(0, -300px);
+  }
+  form .column-12 {
+    transform: translate(0, -255px);
+  }
+  form .column-13 {
+    transform: translate(0, -315px);
+  }
+}/*# sourceMappingURL=cadastro_clientes.css.map */

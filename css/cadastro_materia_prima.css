@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.navbar {
+  transform: translate(0, -707px);
+  width: 100%;
+  height: 15vh;
+  background-color: #545454;
+  display: flex;
+}
+.navbar .logo {
+  width: 15%;
+  background-color: transparent;
+  transform: translate(0, -10px);
+}
+.navbar .logo .imagem-logo {
+  width: 100%;
+  transform: translate(0, -65px);
+}
+.navbar .logo button {
+  height: 10vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar nav {
+  width: 55%;
+  transform: translate(-15px, -20px);
+  padding-top: 3vh;
+  height: 10vh;
+  background-color: transparent;
+}
+.navbar nav a.link {
+  font-size: 20px;
+  padding-left: 40px;
+  transform: translate(0, 20px);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.navbar nav .link:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar nav .seletor {
+  width: 16%;
+  height: 4vh;
+  border-radius: 7px;
+  border-style: solid;
+  transform: translate(40px);
+}
+.navbar nav .seletor:hover {
+  background-color: #545454;
+  color: white;
+  border-color: white;
+}
+.navbar nav .button-location {
+  width: 17.5%;
+  background-color: transparent;
+  transform: translate(630px, -30px);
+}
+.navbar .conteudo {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+.navbar .local {
+  width: 15%;
+  height: 10vh;
+  background-color: transparent;
+  transform: translate(-70px, -6px);
+}
+.navbar .local img {
+  width: 25%;
+  transform: translate(0, 10px);
+}
+.navbar .local h3 {
+  transform: translate(60px, -30px);
+  color: white;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  background-color: #a8a39d;
+}
+form .column-7 label[for=observacao], form .column-6 label[for=status], form .column-5 label[for=categoria], form .column-4 label[for=descricao], form .column-3 label[for=quantidade], form .column-2 label[for=valor], form .column-1 label[for=nome] {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+form .column-7 input[name=observacao]:hover, form .column-6 select[id=status]:hover, form .column-5 select[name=categoria]:hover, form .column-4 input[name=descricao]:hover, form .column-3 input[name=quantidade]:hover, form .column-2 input[name=valor]:hover, form .column-1 input[name=nome]:hover {
+  transition: 0.4s;
+  background-color: rgb(237, 235, 233);
+}
+form .column-1 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 170px);
+  margin-left: 5%;
+}
+form .column-1 input[name=nome] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-2 {
+  width: 29%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 105px);
+  margin-left: 38%;
+}
+form .column-2 input[name=valor] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-3 {
+  width: 25.8%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 40px);
+  margin-left: 70%;
+}
+form .column-3 input[name=quantidade] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-4 {
+  width: 30%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 110px);
+  margin-left: 5%;
+}
+form .column-4 input[id=descricao] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-5 {
+  width: 29%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, 50px);
+  margin-left: 38%;
+}
+form .column-5 select[id=categoria] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-6 {
+  width: 25%;
+  height: 9vh;
+  background-color: transparent;
+  transform: translate(0, -10px);
+  margin-left: 70.5%;
+}
+form .column-6 select[id=status] {
+  width: 97%;
+  height: 4vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form .column-7 {
+  width: 92%;
+  height: 25vh;
+  background-color: transparent;
+  transform: translate(0, 40px);
+  margin-left: 5%;
+}
+form .column-7 input[id=observacao] {
+  width: 97.5%;
+  height: 25vh;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 10px;
+}
+form input[type=submit] {
+  width: 10%;
+  height: 5vh;
+  margin-left: 85%;
+  transform: translate(0, 140px);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  font-size: 20px;
+}
+form input[type=submit]:hover {
+  transition: 0.1s;
+  background-color: #545454;
+  color: white;
+  border-color: gray;
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    transform: translate(0, -757.5px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-15px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, 3.5px);
+  }
+  form .column-2 {
+    transform: translate(0, 100px);
+  }
+  form .column-3 {
+    transform: translate(0, 30px);
+  }
+  form .column-4 {
+    transform: translate(0, 80px);
+  }
+  form .column-5 {
+    transform: translate(0, 10px);
+  }
+  form .column-6 {
+    transform: translate(0, -60px);
+  }
+  form .column-7 {
+    transform: translate(0, -30px);
+  }
+}
+@media screen and (max-width: 1370px) {
+  .navbar {
+    transform: translate(0, -643px);
+  }
+  .navbar .logo {
+    background-color: transparent;
+  }
+  .navbar .logo .imagem-logo {
+    transform: translate(0, -55px);
+  }
+  .navbar nav {
+    background-color: transparent;
+    transform: translate(-30px, -10px);
+  }
+  .navbar .local {
+    background-color: transparent;
+    transform: translate(-70px, 2px);
+  }
+  form .column-1 {
+    transform: translate(0, 150px);
+  }
+  form .column-2 {
+    transform: translate(0, 90px);
+  }
+  form .column-3 {
+    transform: translate(0, 30px);
+  }
+  form .column-4 {
+    transform: translate(0, 80px);
+  }
+  form .column-5 {
+    transform: translate(0, 20px);
+  }
+  form .column-6 {
+    transform: translate(0, -40px);
+  }
+  form .column-7 {
+    transform: translate(0, 10px);
+  }
+  form input[type=submit] {
+    transform: translate(0, 140px);
+  }
+}/*# sourceMappingURL=cadastro_materia_prima.css.map */
