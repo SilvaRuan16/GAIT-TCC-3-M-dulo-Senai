@@ -1,5 +1,4 @@
 <?php
-
     session_start();
     include('conexao.php');
 
@@ -70,13 +69,30 @@
 
         ));
 
+        /*
         $_SESSION['salvar'] = "Cadastro inserido com sucesso!";
         header('Location: ../html/clientes.php');
-      
+        */
+        //header('location: ./js-redirection/inserir_cliente.js');
+
+        // Remover cabeçalhos de redirecionamento
+        header("Content-Type: application/json");
+        header("Access-Control-Allow-Origin: *");
+
+        // Executar a lógica de cadastro
+        ...
+
+        // Enviar resposta
+        echo json_encode(["sucesso" => true]);
+
+
     }catch(PDOException $e){
         
+      /*
         $_SESSION['inserir_error'] = "Ops! cadastro não realizado!";
         header('Location: ../html/clientes.php');
+      */
+      echo json_encode(["falha" => false]);
     }
 
 }

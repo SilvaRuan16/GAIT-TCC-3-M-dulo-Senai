@@ -1,4 +1,5 @@
 <?php
+
 /* Connect to a MySQL database using driver invocation */
 try{
     $dsn = 'mysql:dbname=gait;host=127.0.0.1;port=3306';

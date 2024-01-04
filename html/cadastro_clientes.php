@@ -29,7 +29,7 @@
 
 <body>
     <form action="../php/inserir_cliente.php" method="post" id="form">
-        <input type="submit" value="Salvar">
+        <input type="submit" value="Salvar" class="sub">
         <div class="column-1">
            <label for="nome">Nome/ Fantasia *</label>
            <input type="text" name="nome" id="nome" minlength="3" maxlength="60" required> 
@@ -138,6 +138,10 @@
         crossorigin="anonymous"></script>
         <script src="assets/js/jQuery/jquery-3.5.1.min.js"></script>
         <script src="index.js"></script>
+
+        <script>
+            
+        </script>
 </body>
 
 </html>
